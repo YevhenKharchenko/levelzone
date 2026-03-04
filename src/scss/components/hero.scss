@@ -4,8 +4,8 @@
 }
 
 .hero-bg-wrapper {
-  padding-top: 76px;
-  padding-bottom: 274px;
+  padding-top: 348px;
+  padding-bottom: 24px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -13,11 +13,10 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  position: relative;
 
   @include media(desktop) {
-    padding-top: 102px;
-    padding-bottom: 40px;
+    padding-top: 161px;
+    padding-bottom: 99px;
     max-width: 1440px;
     background-image: url(../img/hero/hero-bg-desk.jpg);
   }
@@ -29,8 +28,15 @@
 }
 
 .hero-content-wrapper {
+  backdrop-filter: blur(12px);
+  box-shadow: 8px 8px 20px 0 rgba(134, 117, 117, 0.18);
+  background: rgba(230, 184, 156, 0.8);
+  border: 8px solid #e4b495;
+  border-radius: 64px;
+  padding: 32px 8px;
+
   @include media(desktop) {
-    max-width: 556px;
+    max-width: 474px;
   }
 }
 
@@ -44,34 +50,35 @@
 }
 
 .hero-subtitle {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 600;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
   font-size: 28px;
-  line-height: 1.22;
+  line-height: 1.3;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
-  margin-bottom: 8px;
+  color: #0b1820;
+  margin-bottom: 4px;
 
   @include media(desktop) {
-    font-size: 42px;
+    font-size: 34px;
   }
 }
 
 .hero-text {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Baloo 2', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
   text-align: center;
-  color: #fff;
+  color: #0b1820;
   margin-bottom: 24px;
 
   @include media(desktop) {
     font-size: 18px;
-    max-width: 340px;
+    max-width: 356px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 32px;
   }
 }
 
@@ -79,8 +86,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffd102;
-  border-radius: 50px;
+  box-shadow: 0 4px 0 0 #65b50a;
+  background: #82e219;
+  border-radius: 12px;
   padding: 12px 20px;
   width: 100%;
   max-width: 343px;
@@ -95,7 +103,7 @@
   &:hover,
   &:focus,
   &:active {
-    background: #eabc25;
+    background: #76cf15;
 
     .her-btn-top-text {
     }
@@ -118,7 +126,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #343434;
+  color: #315600;
   margin-bottom: 4px;
   transition: color 0.3s ease-in-out;
 
@@ -130,7 +138,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: #343434;
+  color: #315600;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
