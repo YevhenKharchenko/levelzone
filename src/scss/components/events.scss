@@ -1,0 +1,64 @@
+.events-section {
+  @include media(desktop) {
+  }
+}
+
+.events-bg-wrapper {
+  padding-top: 80px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/events/events-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+    background-image: url(../img/events/events-bg-desk.png);
+  }
+}
+
+.events-container {
+  @include media(desktop) {
+  }
+}
+
+.events-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.events-title {
+  @include media(desktop) {
+  }
+}
+
+.events-text {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #343434;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 864px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+  }
+}
+
+.events-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+  }
+}
