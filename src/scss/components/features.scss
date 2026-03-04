@@ -5,20 +5,15 @@
 
 .features-bg-wrapper {
   padding-top: 64px;
-  padding-bottom: 52px;
+  padding-bottom: 64px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/features/features-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
-    background-image: url(../img/features/features-bg-desk.png);
   }
 }
 
@@ -27,74 +22,71 @@
   }
 }
 
+.features-content-wrapper {
+  box-shadow: 8px 8px 16px 0 rgba(118, 104, 104, 0.16);
+  background: #ffece5;
+  border-radius: 36px;
+  padding: 40px 16px;
+
+  @include media(desktop) {
+  }
+}
+
 .features-title {
   margin-bottom: 48px;
 
   @include media(desktop) {
-    margin-bottom: 64px;
-  }
-}
-
-.features-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 64px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-.features-img {
-  @include media(desktop) {
-    min-width: 608px;
+    max-width: 360px;
+    margin-bottom: 72px;
   }
 }
 
 .features-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  align-items: center;
+  gap: 32px;
 
   @include media(desktop) {
-    gap: 32px;
-    max-width: 640px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
   }
 }
 
 .features-list-item {
-  box-shadow: 8px 8px 16px 0 rgba(110, 97, 97, 0.12);
-  border-radius: 20px;
-  padding: 16px 40px;
-
-  &:nth-child(1) {
-    background: #ff7a44;
-  }
+  box-shadow: 8px 8px 16px 0 rgba(118, 104, 104, 0.16);
+  background: #feffff;
+  border-radius: 40px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 311px;
 
   &:nth-child(2) {
-    background: #a647fb;
+    background: linear-gradient(180deg, #ffb9a6 0%, #ff653a 100%);
   }
 
-  &:nth-child(3) {
-    background: #2cb4e8;
+  @include media(desktop) {
+    max-width: 272px;
   }
+}
 
-  &:nth-child(4) {
-    background: #2dc78b;
-  }
-
+.features-img {
   @include media(desktop) {
   }
 }
 
 .features-item-text {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.4;
-  color: #fff;
+  text-align: center;
+  color: #0b1820;
 
   @include media(desktop) {
     font-size: 24px;

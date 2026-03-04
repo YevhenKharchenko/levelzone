@@ -4,21 +4,16 @@
 }
 
 .events-bg-wrapper {
-  padding-top: 80px;
+  padding-top: 64px;
   padding-bottom: 64px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/events/events-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
-    background-image: url(../img/events/events-bg-desk.png);
   }
 }
 
@@ -34,12 +29,13 @@
 
 .events-title {
   @include media(desktop) {
+    max-width: 467px;
   }
 }
 
 .events-text {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.4;
   text-align: center;
@@ -48,17 +44,20 @@
 
   @include media(desktop) {
     font-size: 24px;
-    max-width: 864px;
+    max-width: 704px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 64px;
+    margin-bottom: 72px;
   }
 }
 
 .events-img {
+  box-shadow: 8px 8px 16px 0 rgba(118, 104, 104, 0.16);
+  border-radius: 36px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
+    border-radius: 64px;
   }
 }

@@ -9,16 +9,11 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/about/about-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
 
   @include media(desktop) {
     padding-top: 120px;
     padding-bottom: 80px;
     max-width: 1440px;
-    background-image: url(../img/about/about-bg-desk.png);
   }
 }
 
@@ -34,33 +29,53 @@
 
 .about-title {
   @include media(desktop) {
+    max-width: 360px;
   }
 }
 
 .about-text {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.4;
   text-align: center;
-  color: #2a2a2a;
-  margin-bottom: 24px;
+  color: #0b1820;
+  margin-bottom: 48px;
 
   @include media(desktop) {
     font-size: 24px;
-    max-width: 864px;
+    max-width: 704px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 72px;
+  }
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.about-list-item {
+  box-shadow: 8px 8px 16px 0 rgba(118, 104, 104, 0.16);
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
   }
 }
 
 .about-img {
-  box-shadow: 8px 8px 16px 0 rgba(110, 97, 97, 0.12);
-  border-radius: 60px;
-  margin-left: auto;
-  margin-right: auto;
-
   @include media(desktop) {
   }
 }

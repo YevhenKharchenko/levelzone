@@ -54,12 +54,10 @@ html {
   text-transform: uppercase;
   text-align: center;
   color: #0b1820;
-  width: 100%;
   margin-bottom: 32px;
 
   @include media(desktop) {
     font-size: 42px;
-    max-width: max-content;
     margin-left: auto;
     margin-right: auto;
   }
